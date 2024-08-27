@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <div class="Contato">
-    <h1>Info Valorant</h1>
-    <a href="index.html" target="_blank">Início</a>    
-    <a href="sobre.html" target="_blank">Sobre</a>
-    <a href="contato.html" target="_blank">Contato</a>
-    <img src="assets/gekko banner contato.jpg" alt="banner gekko">
+        <h1>INFO VALORANT</h1>
+        <nav class="contato">
+            <a href="index.html" target="_blank">Início</a>    
+            <a href="sobre.html" target="_blank">Sobre</a>
+            <a href="contato.html" target="_blank">Contato</a>
+        </nav>
+        <img src="assets/gekko banner contato.jpg" alt="banner gekko">
 
-    <h1>Tá afim de trocar uma ideia ou perguntar algo? É só preencher os campos!</h1>
-    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate accept-charset="UTF-8" target="_blank">
-        <fieldset>
-        <legend> Informações Pessoais</legend> <label for="nome">Nome: </label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required maxlength="100">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-        <label for="mensagem">Mensagem: </label>
-        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe aqui a sua mensagem 🤙"></textarea>
-    </form>
+        <div class="campos">
+        <h2>Tá afim de trocar uma ideia ou perguntar algo? É só preencher os campos!</h2>
+    </div>
+        
+        
+    </div>
+
+    <div class="formulario">
+        <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate
+            accept-charset="UTF-8" target="_blank">
+            <fieldset>
+                <legend> Informações Pessoais</legend> <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required maxlength="100"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required><br>
+                <label for="mensagem">Mensagem: </label><br>
+                <textarea id="mensagem" name="mensagem" rows="10"
+                    placeholder="Deixe aqui a sua mensagem 🤙"></textarea>
+        </form>
     </fieldset>
-
+    </div>  
+    
     <button type="submit">Enviar</button>
-
-</div>
 </body>
+
 </html>
